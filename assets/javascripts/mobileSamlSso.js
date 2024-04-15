@@ -33,7 +33,7 @@ function notify() {
         case "sfsafariviewcontroller":
         // Chrome Custom tab in Android App
         case "chromecustomtab":
-            var launchURL = window.cobundu.ssoMobileUrl + "://accessToken=" + window.cobundu.accessToken + "&refreshToken=" + window.cobundu.refreshToken;
+            var launchURL = window.cobundu.ssoMobileUrl + "://refreshToken=" + window.cobundu.refreshToken + "&accessToken=" + window.cobundu.accessToken;
             window.location.href = launchURL;
             break;
         case "webbrowser":
